@@ -500,7 +500,59 @@ img {
     font-weight: 800;
 }
 
+/* =========================
+   REVIEWS
+========================= */
 
+.reviews {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.review-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 36px;
+    box-shadow: 0 12px 35px rgba(13, 57, 101, 0.06);
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.review-card blockquote {
+    color: #334155;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.review-translation {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.review-name {
+    color: #0d3965;
+    font-weight: 900;
+}
+
+.review-source {
+    color: #64748b;
+    font-size: 0.85rem;
+}
 /* =========================
    CONTACT
 ========================= */
