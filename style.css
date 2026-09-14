@@ -163,3 +163,55 @@ body {
         padding: 70px 0;
     }
 }
+/* Services */
+
+.services {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.dark-eyebrow {
+    color: #e87924;
+}
+
+.section-heading h2 {
+    color: #0f3d63;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.section-heading > p:last-child {
+    color: #64748b;
+    font-size: 1.05rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(15, 61, 99, 0.06);
+}
+
+.service-card h3 {
+    color: #0f3d63;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: #64748b;
+}
