@@ -843,14 +843,28 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
-    }
+ .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 190px;
+    gap: 10px;
+}
 
-    .portfolio-wide {
-        grid-column: auto;
-    }
+.portfolio-wide {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.portfolio-card img {
+    object-fit: cover;
+}
+
+.project-overlay {
+    padding: 12px;
+}
+
+.project-overlay span {
+    font-size: 0.82rem;
+}
 
     .comparison-card img {
         height: 320px;
