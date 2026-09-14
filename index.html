@@ -15,12 +15,8 @@
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="site-header">
-
         <div class="container header-container">
 
             <a href="#top" class="logo">
@@ -43,19 +39,13 @@
             </a>
 
         </div>
-
     </header>
 
 
     <main id="top">
 
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
+        <!-- HERO -->
         <section class="hero">
-
             <div class="container hero-content">
 
                 <p class="eyebrow">
@@ -73,12 +63,10 @@
                 </p>
 
                 <div class="hero-checks">
-
                     <div>✓ Waterproofing & Drainage</div>
                     <div>✓ Interior & Exterior Painting</div>
                     <div>✓ Repairs & Restoration</div>
                     <div>✓ Free Estimates</div>
-
                 </div>
 
                 <div class="hero-buttons">
@@ -94,16 +82,11 @@
                 </div>
 
             </div>
-
         </section>
 
 
-        <!-- =========================
-             TRUST BAR
-        ========================== -->
-
+        <!-- TRUST BAR -->
         <section class="trust-bar">
-
             <div class="container trust-grid">
 
                 <div>
@@ -127,16 +110,11 @@
                 </div>
 
             </div>
-
         </section>
 
 
-        <!-- =========================
-             SERVICES
-        ========================== -->
-
+        <!-- SERVICES -->
         <section class="services" id="services">
-
             <div class="container">
 
                 <div class="section-heading">
@@ -160,90 +138,108 @@
 
                 <div class="services-grid">
 
-
                     <article class="service-card">
-
                         <div class="service-icon">01</div>
-
                         <h3>Waterproofing</h3>
-
                         <p>
                             Waterproofing solutions designed to help protect
                             properties from moisture and water intrusion.
                         </p>
-
                     </article>
 
 
                     <article class="service-card">
-
                         <div class="service-icon">02</div>
-
                         <h3>Painting</h3>
-
                         <p>
                             Interior and exterior painting services for
                             residential and commercial properties.
                         </p>
-
                     </article>
 
 
                     <article class="service-card">
-
                         <div class="service-icon">03</div>
-
                         <h3>Restoration</h3>
-
                         <p>
                             Property restoration and water damage repair for
                             damaged or aging areas.
                         </p>
-
                     </article>
 
 
                     <article class="service-card">
-
                         <div class="service-icon">04</div>
-
                         <h3>Brick & Masonry</h3>
-
                         <p>
                             Brick, stone and masonry repair and installation
                             for exterior property projects.
                         </p>
-
                     </article>
 
 
                     <article class="service-card">
-
                         <div class="service-icon">05</div>
-
                         <h3>Exterior Repairs</h3>
-
                         <p>
                             Roofing, flashing, siding, wood, concrete, deck
                             and other exterior property repairs.
                         </p>
-
                     </article>
 
 
                     <article class="service-card">
-
                         <div class="service-icon">06</div>
-
                         <h3>Interior Repairs</h3>
-
                         <p>
                             Drywall and other interior repair and improvement
                             services for residential and commercial properties.
                         </p>
-
                     </article>
 
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT / QUALITY -->
+        <section class="quality-section" id="about">
+
+            <div class="container quality-container">
+
+                <div class="quality-image">
+                    <img src="images/flores-bathroom-finished.jpg"
+                        alt="Finished bathroom restoration project">
+                </div>
+
+
+                <div class="quality-copy">
+
+                    <p class="eyebrow">
+                        Why Choose Flores
+                    </p>
+
+                    <h2>
+                        Small Details Make a Big Difference
+                    </h2>
+
+                    <p>
+                        Flores Waterproofing Restoration & Painting LLC provides
+                        residential and commercial property services with careful
+                        preparation and attention to detail.
+                    </p>
+
+                    <ul class="quality-list">
+                        <li>Residential & commercial services</li>
+                        <li>Detailed preparation</li>
+                        <li>Professional finishes</li>
+                        <li>Free estimates</li>
+                    </ul>
+
+                    <a href="#contact" class="button primary-button">
+                        Request a Free Estimate
+                    </a>
 
                 </div>
 
@@ -252,94 +248,7 @@
         </section>
 
 
-      /* =========================
-   ABOUT / QUALITY
-========================= */
-
-.quality-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.quality-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 65px;
-    align-items: center;
-}
-
-.quality-image {
-    height: 540px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 18px 45px rgba(13,57,101,.12);
-}
-
-.quality-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.quality-copy h2 {
-    color: #0d3965;
-    font-size: clamp(2.5rem,5vw,4rem);
-    line-height: 1.05;
-    margin-bottom: 20px;
-}
-
-.quality-copy > p {
-    color: #64748b;
-    margin-bottom: 24px;
-    font-size: 1.07rem;
-}
-
-.quality-list {
-    list-style: none;
-    display: grid;
-    gap: 11px;
-    margin-bottom: 29px;
-}
-
-.quality-list li {
-    color: #0d3965;
-    font-weight: 700;
-}
-
-.quality-list li::before {
-    content: "✓";
-    color: #f97316;
-    margin-right: 10px;
-}
-
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    .quality-container {
-        grid-template-columns: 1fr;
-    }
-
-    .quality-image {
-        height: 450px;
-    }
-}
-
-
-/* MOBILE */
-
-@media (max-width: 650px) {
-
-    .quality-image {
-        height: 380px;
-    }
-}
-
-        <!-- =========================
-             COMPLETE SERVICE LIST
-        ========================== -->
-
+        <!-- COMPLETE SERVICE LIST -->
         <section class="all-services">
 
             <div class="container">
@@ -386,16 +295,12 @@
         </section>
 
 
-        <!-- =========================
-             QUALITY STRIP
-        ========================== -->
-
+        <!-- QUALITY STRIP -->
         <section class="feature-strip">
 
             <div class="container feature-strip-content">
 
                 <div>
-
                     <p class="eyebrow light-eyebrow">
                         Flores Waterproofing
                     </p>
@@ -408,7 +313,6 @@
                         Property services with attention to detail from
                         start to finish.
                     </p>
-
                 </div>
 
                 <a href="tel:3366752573" class="button white-button">
@@ -420,10 +324,7 @@
         </section>
 
 
-        <!-- =========================
-             PROJECT PORTFOLIO
-        ========================== -->
-
+        <!-- PROJECT PORTFOLIO -->
         <section class="work" id="work">
 
             <div class="container">
@@ -448,9 +349,7 @@
 
                 <div class="portfolio-grid">
 
-
                     <!-- FEATURED HOUSE -->
-
                     <article class="portfolio-card portfolio-wide">
 
                         <img src="images/flores-house-exterior.jpg"
@@ -464,7 +363,6 @@
 
 
                     <!-- EXTERIOR WORK -->
-
                     <article class="portfolio-card">
 
                         <img src="images/flores-exterior-work.jpg"
@@ -478,7 +376,6 @@
 
 
                     <!-- ROOF REPAIR -->
-
                     <article class="portfolio-card">
 
                         <img src="images/flores-roof-repair.jpg"
@@ -492,7 +389,6 @@
 
 
                     <!-- INTERIOR PAINTING -->
-
                     <article class="portfolio-card">
 
                         <img src="images/flores-bathroom-painting.jpg"
@@ -505,8 +401,7 @@
                     </article>
 
 
-                    <!-- BATHROOM -->
-
+                    <!-- BATHROOM RESTORATION -->
                     <article class="portfolio-card">
 
                         <img src="images/flores-bathroom-finished.jpg"
@@ -519,8 +414,7 @@
                     </article>
 
 
-                    <!-- SHED -->
-
+                    <!-- EXTERIOR PAINTING -->
                     <article class="portfolio-card">
 
                         <img src="images/flores-shed-exterior.jpg"
@@ -533,8 +427,7 @@
                     </article>
 
 
-                    <!-- MASONRY - CORRECT LOCATION -->
-
+                    <!-- MASONRY -->
                     <article class="portfolio-card">
 
                         <img src="images/flores-masonry.jpg"
@@ -546,7 +439,6 @@
 
                     </article>
 
-
                 </div>
 
             </div>
@@ -554,10 +446,7 @@
         </section>
 
 
-        <!-- =========================
-             BEFORE & AFTER
-        ========================== -->
-
+        <!-- BEFORE & AFTER -->
         <section class="before-after" id="before-after">
 
             <div class="container">
@@ -582,7 +471,6 @@
 
                 <div class="before-after-grid">
 
-
                     <div class="before-after-card">
 
                         <span class="photo-label before-label">
@@ -606,7 +494,6 @@
 
                     </div>
 
-
                 </div>
 
             </div>
@@ -614,10 +501,7 @@
         </section>
 
 
-        <!-- =========================
-             REVIEWS
-        ========================== -->
-
+        <!-- REVIEWS -->
         <section class="reviews" id="reviews">
 
             <div class="container">
@@ -647,7 +531,6 @@
 
 
                 <div class="reviews-grid">
-
 
                     <article class="review-card">
 
@@ -715,7 +598,6 @@
 
                     </article>
 
-
                 </div>
 
             </div>
@@ -723,10 +605,7 @@
         </section>
 
 
-        <!-- =========================
-             SERVICE AREAS
-        ========================== -->
-
+        <!-- SERVICE AREAS -->
         <section class="service-areas" id="service-areas">
 
             <div class="container">
@@ -799,14 +678,10 @@
         </section>
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
+        <!-- CONTACT -->
         <section class="contact" id="contact">
 
             <div class="container contact-container">
-
 
                 <div class="contact-copy">
 
@@ -827,35 +702,26 @@
                     <div class="contact-points">
 
                         <div>
-
                             <strong>Phone</strong>
-
                             <a href="tel:3366752573">
                                 336-675-2573
                             </a>
-
                         </div>
 
 
                         <div>
-
                             <strong>Email</strong>
-
                             <a href="mailto:edwinflores205@yahoo.com">
                                 edwinflores205@yahoo.com
                             </a>
-
                         </div>
 
 
                         <div>
-
                             <strong>Based In</strong>
-
                             <span>
                                 Graham, North Carolina
                             </span>
-
                         </div>
 
                     </div>
@@ -875,37 +741,27 @@
 
                     <a href="tel:3366752573"
                         class="button primary-button full-button">
-
                         Call Now
-
                     </a>
 
                     <a href="mailto:edwinflores205@yahoo.com"
                         class="button outline-dark-button full-button">
-
                         Send an Email
-
                     </a>
 
                 </div>
-
 
             </div>
 
         </section>
 
-
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
 
         <div class="container footer-grid">
-
 
             <div class="footer-brand">
 
@@ -953,7 +809,6 @@
 
             </div>
 
-
         </div>
 
 
@@ -967,7 +822,6 @@
         </div>
 
     </footer>
-
 
 </body>
 
