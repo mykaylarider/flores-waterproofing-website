@@ -804,14 +804,6 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .quality-container {
-        grid-template-columns: 1fr;
-    }
-
-    .quality-image {
-        height: 450px;
-    }
-
     .service-list-grid {
         grid-template-columns: repeat(2, 1fr);
     }
