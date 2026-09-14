@@ -1022,4 +1022,25 @@ a {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+    /* LANGUAGE SWITCH */
+.language-link {
+    color: #f97316 !important;
+    font-weight: 700;
+    border-left: 1px solid #d9e0e7;
+    padding-left: 18px !important;
+    margin-left: 4px;
+    transition: color 0.2s ease;
+}
+
+.language-link:hover {
+    color: #0d3965 !important;
+}
+
+@media (max-width: 900px) {
+    .language-link {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0 !important;
+    }
+}
 }
