@@ -80,7 +80,7 @@ body {
 }
 
 .header-container {
-    min-height: 76px;
+    min-height: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
