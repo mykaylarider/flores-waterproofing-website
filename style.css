@@ -81,6 +81,11 @@ a {
     color: #0d3965;
 }
 
+.outline-dark-button:hover {
+    background: #0d3965;
+    color: #ffffff;
+}
+
 .full-button {
     width: 100%;
     text-align: center;
@@ -130,6 +135,7 @@ a {
     font-weight: 700;
     text-decoration: none;
     white-space: nowrap;
+    transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
@@ -144,6 +150,12 @@ a {
     text-decoration: none;
     font-weight: 800;
     white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.header-call:hover {
+    background: #f97316;
+    transform: translateY(-2px);
 }
 
 
@@ -234,6 +246,7 @@ a {
 
 .trust-grid strong {
     display: block;
+    font-size: 1.03rem;
 }
 
 .trust-grid span {
@@ -290,28 +303,48 @@ a {
 
 .service-card {
     background: #ffffff;
-    padding: 32px;
+    padding: 34px;
     border: 1px solid #e2e8f0;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(13, 57, 101, 0.06);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #fed7aa;
+    box-shadow: 0 18px 38px rgba(13, 57, 101, 0.11);
 }
 
 .service-icon {
-    width: 43px;
-    height: 43px;
+    width: 58px;
+    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    background: #eff6ff;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    background: #fff4eb;
     color: #f97316;
-    font-weight: 900;
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .service-card h3 {
     color: #0d3965;
     margin-bottom: 9px;
+    font-size: 1.2rem;
 }
 
 .service-card p {
@@ -590,6 +623,12 @@ a {
     border: 1px solid #e2e8f0;
     border-radius: 10px;
     padding: 31px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(13, 57, 101, 0.09);
 }
 
 .stars {
@@ -603,6 +642,7 @@ a {
     color: #334155;
     line-height: 1.75;
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .review-name {
@@ -701,6 +741,7 @@ a {
     color: #1f2937;
     padding: 36px;
     border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
 }
 
 .contact-card-title {
@@ -804,6 +845,12 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*
+       IMPORTANT:
+       The quality section deliberately stays two-column here.
+       This preserves the desktop/tablet layout we already fixed.
+    */
+
     .service-list-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -853,6 +900,10 @@ a {
         width: min(94%, 1160px);
     }
 
+    .header-container {
+        min-height: auto;
+    }
+
     .logo img {
         width: 175px;
     }
@@ -895,8 +946,30 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .trust-grid > div {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .trust-grid > div:last-child {
+        border-bottom: none;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 28px;
+    }
+
+    /*
+       The quality section stacks only on actual phone-size screens.
+    */
+
+    .quality-container {
+        grid-template-columns: 1fr;
+        gap: 38px;
     }
 
     .quality-image {
