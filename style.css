@@ -1042,5 +1042,61 @@ a {
         margin-left: 0;
         padding-left: 0 !important;
     }
+}/* HEADER POLISH */
+.site-header {
+    padding: 10px 0;
+}
+
+.header-container {
+    gap: 28px;
+}
+
+.logo img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.main-nav {
+    gap: 18px;
+}
+
+.main-nav a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.header-call {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .logo img {
+        width: 215px;
+    }
+
+    .main-nav {
+        gap: 13px;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .site-header {
+        padding: 12px 0;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .main-nav {
+        gap: 12px 16px;
+    }
 }
 }
