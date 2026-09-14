@@ -88,18 +88,17 @@ body {
 }
 
 .logo {
-    color: #0b3155;
-    font-size: 1.15rem;
-    font-weight: 900;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    line-height: 1.1;
 }
 
-.logo span {
+.logo img {
     display: block;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: #2563a6;
+    width: 165px;
+    height: auto;
+    max-height: 68px;
+    object-fit: contain;
 }
 
 .main-nav {
