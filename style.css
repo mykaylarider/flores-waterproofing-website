@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
 
 html {
     scroll-behavior: smooth;
@@ -91,7 +90,7 @@ img {
 }
 
 .header-container {
-    min-height: 100px;
+    min-height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
