@@ -99,11 +99,10 @@ img {
 }
 
 .logo img {
-    width: 220px;
-    max-height: 86px;
+    width: 250px;
+    max-height: 92px;
     object-fit: contain;
 }
-
 .main-nav {
     display: flex;
     gap: 18px;
